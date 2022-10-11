@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root{
+    --black: #000000;
+    --gris: #707081;
+}
+
+@font-face {
+    font-family: 'sickaf';
+    src: url(BICRODEPERSONALUSE.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'drukwide';
+    src: url(Druk-Wide-Bold.ttf);
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', 'sans-serif';
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1 {
+    font-family: 'sickaf';
+    color: #fff;
+}
+
+h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img{
+    width: 100%;
+}
+
+/* Navbar */
+.navbar {
+    background-color: white;
+    color: var(--black);
+    height: 100px;
+}
+
+.navbar .logo {
+    color: var(--black);
+}
+
+.navbar ul { /* Menu dalt dreta */
+    display: flex;
+}
+
+.navbar a{
+    color: var(--black);
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover{ /* Al apuntar amb la fletxa es subralli */
+    border-bottom: 2px var(--black) solid;
+}
+
+.navbar .flex{
+    justify-content: space-between;
+}
+
+/* descripcio */
+.descripcio {
+
+    margin-top: 10px;
+    height: 800px;
+    background-color: var(--black);
+    color: #fff;
+    position: relative;
+}
+
+.descripcio h1{
+    font-size: 40px;
+}
+
+.descripcio-text h2{
+    font-family: 'drukwide';
+    font-size: 30px;
+}
+
+.descripcio-text a{
+    font-family: 'drukwide'
+}
+
+.descripcio p {
+    text-align:justify;
+    margin: 20px 0;
+}
+
+.descripcio .grid {
+    overflow: visible;
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+}
+
+.descripcio-form {
+    position: relative;
+    height: 350px;
+    padding: 40px;
+    z-index: 100;
+}
+
+/* Contacte */
+.descripcio-form-contacte {
+    position: relative;
+    height: 500px;
+    padding: 40px;
+    z-index: 100;
+}
+
+.descripcio-form-contacte h2{
+    font-family: 'drukwide';
+}
+
+.form-control{
+    margin-top: 20px;
+    margin-bottom:20px;
+    display:grid;
+    place-items: center;
+}
+
+.form-control input {
+    font-family: 'Lato', 'sans-serif';
+}
+
+.descripcio-form-contacte input[type='text'], .descripcio-form-contacte input[type='email']  {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 50%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.descripcio-form-contacte input:focus {
+    outline: none;
+}
+
+/* Fi contacte*/
+
+.descripcio-form .form-control{
+    margin: 30px 0;
+}
+
+.descripcio-form input[type='text'], .descripcio-form input[type='email']  {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.descripcio-form input:focus {
+    outline: none;
+}
+
+/* formacio */
+
+.formacio {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.formacio-heading{
+    max-width: 500px;
+    margin: auto;
+}
+
+.formacio h2 {
+    font-family: 'drukwide';
+    font-weight: bold;
+}
+
+.formacio .grid h3{
+    font-size: 35px;
+}
+
+.formacio .grid p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Habilitats */
+
+.habilitats {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.habilitats h2 {
+   font-family: 'drukwide';
+}
+
+.habilitats h3 {
+    font-family: 'Lato', 'sans-serif';
+}
+
+.habilitats .titol {
+    margin-bottom: 30px;
+}
+
+.habilitats .grid > *:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.habilitats h3:hover{ /* Al apuntar amb la fletxa es subralli */
+    padding: 10px 10px;  
+    overflow:hidden;
+}
+
+/* Idiomes oficials */
+
+.idiomes {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.idiomes h2 {
+    font-family: 'drukwide';
+}
+
+.idiomes .u-llista {
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.idiomes .llista {
+
+    font-weight: bold;
+    text-align:center;
+    background-color: #fff;
+    color: #333;
+    border-radius: 30px;
+    box-shadow: 0 3px 10px #333;
+    padding: 20px;
+    margin: 10px;
+}
+
+.idiomes .llista:hover {
+    box-shadow: 0 3px 10px rgba(255, 255, 255);
+}
+
+/* Llenguatges */
+
+.languages {
+    margin-top: 50px;
+}
+
+.languages h2 {
+    font-family: 'drukwide';
+}
+
+.languages .flex {
+    flex-wrap: wrap;
+}
+
+.languages .card .imatge {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: transform 0.2s ease-in;
+}
+
+.languages .card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.languages .card:hover {
+    transform: translateY(-15px);
+}
+
+/* Footer */
+.footer {
+    margin: 80px 0px 0px 0px;    
+}
+
+.footer .social a {
+    margin: 0 10px;
+}
+
+.footer::before, .footer::after{
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+
+/* Tablets and under */
+@media(max-width: 768px){
+    .grid,
+    .descripcio .grid,
+    .formacio .grid,
+    .cli .grid,
+    .cloud .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .descripcio {
+        height: auto;
+    }
+
+    .descripcio-text{
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .descripcio-form {
+        justify-self: center;
+        margin: auto;
+    }
+
+    .cli .grid > *:first-child {
+        grid-column: 1;
+        grid-row: 1;
+    }  
+}
+
+/* Mobil */
+@media(max-width: 500px){
+    .navbar {
+        height: 110px;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
