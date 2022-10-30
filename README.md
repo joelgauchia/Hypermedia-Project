@@ -3,6 +3,8 @@ This is a project I made as an assignment which consists on developing my Curric
 
 Here is the public link to the website: 
 https://joelgauchia.github.io/Hypermedia-Project/HypermediaProject/index.html
+And the public link to the figma design:
+https://www.figma.com/file/f86TSSUKczz9qiCHvnAYg3/Curriculum-vitae?node-id=5%3A25
 
 PROJECT ANALYSIS
 
